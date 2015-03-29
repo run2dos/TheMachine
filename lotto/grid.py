@@ -81,10 +81,11 @@ def Main():
 	game_matrix.mk_random_row('A')
 	game_matrix.display()
 	game_matrix.mk_random_grid()
-	
+
 	# game_matrix.grid['1'].apply(int).hist()
 	# print(game_matrix.grid.applymap(int))
 	# game_matrix.grid.plot(kind='kde', figsize=(15,10))
+
 	game_matrix.shf_item('2','A','2','B')
 	game_matrix.display()
 

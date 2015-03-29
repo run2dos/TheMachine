@@ -1,8 +1,7 @@
 
-
 def Main():
-	print("Shall")
+	print('Test')
 	
 
 if __name__ == '__main__':
-	main()
+	Main()
