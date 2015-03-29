@@ -65,6 +65,10 @@ class Matrix(Position):
 		self.lottoNumbers.append(random.randint(1, 36))
 		return self.lottoNumbers
 
+	def shf_item(self, x, y, xx, yy):
+		value_to_shf = self.get_item(x, y)
+		self.chg_item(xx, yy, int(value_to_shf))
+
 
 def Main():
 
@@ -77,10 +81,13 @@ def Main():
 	game_matrix.mk_random_row('A')
 	game_matrix.display()
 	game_matrix.mk_random_grid()
-	game_matrix.display()
+	
 	# game_matrix.grid['1'].apply(int).hist()
-	print(game_matrix.grid.applymap(int))
+	# print(game_matrix.grid.applymap(int))
 	# game_matrix.grid.plot(kind='kde', figsize=(15,10))
+	game_matrix.shf_item('2','A','2','B')
+	game_matrix.display()
+
 
 if __name__ == "__main__":
 	Main()
