@@ -1,0 +1,36 @@
+grid_notes
+
+Numbers class
+    - has a value
+    - has an x / y position
+    - can move x / y
+    - can change value
+    - get value
+    - set value
+    - set Power ball bool
+
+
+Position Class
+    - has x value
+    - has y value
+
+Grid 
+    - has numbers
+    - shift numbers
+    - swap numbers
+    - keep position of numbers
+    - add/ sub to numbers
+    - Get # x, y
+    - Set # x, y
+
+make sure 
+3 positions are not duplicated -> maybe store in dict
+sorts #
+use post fix notation (stak of ops)
+    A1, B1, SHF, 10, ADD -> reads
+    - Get A1 value and place in stack
+    - Get B1 value and place in stack
+    - Shift B1 value to A1
+    - Pop B1 from stack
+    - Add value 10 top stack
+    - Add 10 to the new value of A1
